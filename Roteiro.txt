@@ -1,0 +1,33 @@
+---- CRIAÇÃO DA API REST ----
+
+  1º Criação do projeto  via npm  
+    -> mkdir carteira && cd carteira 
+    -> npm init
+  
+  2º Instalação do nodemon para restart automático do servidor local
+    -> npm install --save-dev nodemon  (será utilizado apenas como dependencia de desenvolvimento)
+    -> No arquivo package.json, adicionar o script "start" : "nodemon index.js"]
+
+  3º Instalação do express via gerenciador de pacotes NPM
+    -> npm install express
+  
+  4º Instalação do consign, para fazer o agrupamento de rotas dentro da instância do express
+    -> npm install consign
+
+  5º Instalação do Mysql 
+    -> npm install mysql 
+  
+---- ESTRUTURA DO PROJETO ----
+
+  O projeto foi dividido em 4 pastas:
+    config: onde instanciamos o Express e o consign para fazer as devidas configurações, como habilitar o express para "entender" as requisições do tipo json e form-urlencoded
+
+    controllers: onde foram criados os arquivos que controlam as rotas da aplicação
+
+    infra: onde colocamos os arquivos de configuração de banco de dados e criação de tabelas
+
+    models: onde ficam os arquivos que fazem validação de regra de negócio, manipulam as informações na base de dados e mandam as respostas para o client
+    
+
+  
+  
